@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Vader – Twizip Games</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.7;
+      color: #e0e0e0;
+      background: #0d0d0d;
+    }
+
+    /* ---- NAV ---- */
+    nav {
+      background: #1a1a1a;
+      border-bottom: 1px solid #2a2a2a;
+      padding: 0.8rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav .logo-link { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+    nav .logo-link img { height: 40px; }
+    nav .logo-link span { font-size: 1.15rem; font-weight: 700; color: #fff; }
+    nav .nav-links a {
+      color: #bb86fc;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+    }
+    nav .nav-links a:hover { text-decoration: underline; }
+
+    /* ---- HERO ---- */
+    .hero {
+      position: relative;
+      width: 100%;
+      max-height: 480px;
+      overflow: hidden;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      max-height: 480px;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(13,13,13,1));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero-overlay img.hero-logo {
+      width: 180px;
+      margin-bottom: 1rem;
+    }
+    .hero-overlay h1 {
+      font-size: 2.8rem;
+      color: #ffffff;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+      margin-bottom: 0.4rem;
+    }
+    .hero-overlay p {
+      font-size: 1.15rem;
+      color: #ccc;
+      max-width: 520px;
+    }
+
+    /* ---- SECTIONS ---- */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    section {
+      padding: 3rem 0;
+    }
+    section h2 {
+      font-size: 1.6rem;
+      color: #bb86fc;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    section p {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 1.5rem;
+      color: #bbb;
+    }
+
+    /* ---- GALLERY ---- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 6px;
+      display: block;
+      border: 1px solid #2a2a2a;
+    }
+
+    /* ---- FEATURE CARDS ---- */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+    .card-body {
+      padding: 1.2rem;
+    }
+    .card-body h3 {
+      font-size: 1.15rem;
+      color: #ce9ffc;
+      margin-bottom: 0.4rem;
+    }
+    .card-body p {
+      text-align: left;
+      font-size: 0.95rem;
+      color: #aaa;
+      margin: 0;
+    }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background: #1a1a1a;
+      border-top: 1px solid #2a2a2a;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    footer a {
+      color: #bb86fc;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .hero-overlay h1 { font-size: 1.8rem; }
+      .hero-overlay img.hero-logo { width: 120px; }
+      nav { flex-direction: column; gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html" class="logo-link">
+      <img src="project%20vader%20logo.png" alt="Project Vader Logo">
+      <span>Project Vader</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </nav>
+
+  <!-- HERO BANNER -->
+  <div class="hero">
+    <img src="resized_3000x900.png" alt="Project Vader Banner">
+    <div class="hero-overlay">
+      <img class="hero-logo" src="project%20vader%20logo.png" alt="Project Vader Logo">
+      <h1>Project Vader</h1>
+      <p>A multiplayer VR experience on Meta Quest — by Twizip Games</p>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <div class="container">
+    <section>
+      <h2>About the Game</h2>
+      <p>
+        Project Vader is a multiplayer VR game built for the Meta Quest platform.
+        Team up with friends, communicate with real-time voice chat, and explore
+        immersive worlds together.
+      </p>
+    </section>
+
+    <!-- GALLERY -->
+    <section>
+      <h2>Screenshots</h2>
+      <div class="gallery">
+        <img src="forest_scene_1_2560x1440.png" alt="Forest Scene 1">
+        <img src="forest_scene_2560x1440.png" alt="Forest Scene">
+        <img src="forest_scene_2_2560x1440.png" alt="Forest Scene 2">
+      </div>
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section>
+      <h2>Features</h2>
+      <div class="features">
+        <div class="card">
+          <img src="forest_scene_3_2560x1440.png" alt="Multiplayer">
+          <div class="card-body">
+            <h3>Multiplayer</h3>
+            <p>Jump into real-time multiplayer sessions powered by Photon networking.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="resized_2560x1440.png" alt="Voice Chat">
+          <div class="card-body">
+            <h3>Voice Chat</h3>
+            <p>Communicate with your team using built-in Photon Voice — real-time,
+              never recorded.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="forest_scene_1_2560x1440.png" alt="Immersive Worlds">
+          <div class="card-body">
+            <h3>Immersive Worlds</h3>
+            <p>Explore detailed environments designed from the ground up for VR.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+      <h2>Contact Us</h2>
+      <p>
+        Have questions, feedback, or need support? Reach out at
+        <a href="mailto:projectvaderhelp@yahoo.com" style="color:#bb86fc;">projectvaderhelp@yahoo.com</a>
+      </p>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Twizip Games. All rights reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </p>
+  </footer>
+
+</body>
+</html>
