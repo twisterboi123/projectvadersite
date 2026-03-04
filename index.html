@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Vader – Twizip Games</title>
+  <title>Metro Tags – VR Game</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -38,8 +38,11 @@
     .hero {
       position: relative;
       width: 100%;
+      min-height: 340px;
       max-height: 480px;
       overflow: hidden;
+      display: flex;
+      align-items: stretch;
     }
     .hero img {
       width: 100%;
@@ -55,19 +58,24 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       text-align: center;
-      padding: 2rem;
+      padding-top: 3.5rem;
+      padding-bottom: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
     .hero-overlay img.hero-logo {
       width: 180px;
       margin-bottom: 1rem;
     }
     .hero-overlay h1 {
-      font-size: 2.8rem;
+      font-size: 3.2rem;
       color: #ffffff;
       text-shadow: 0 2px 12px rgba(0,0,0,0.7);
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.7rem;
+      margin-top: 0;
+      line-height: 1.1;
     }
     .hero-overlay p {
       font-size: 1.15rem;
@@ -174,34 +182,29 @@
   <!-- NAVIGATION -->
   <nav>
     <a href="index.html" class="logo-link">
-      <img src="project%20vader%20logo.png" alt="Project Vader Logo">
-      <span>Project Vader</span>
+      <span>Metro Tags</span>
     </a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
     </div>
   </nav>
 
   <!-- HERO BANNER -->
   <div class="hero">
-    <img src="resized_3000x900.png" alt="Project Vader Banner">
+    <img src="resized_3000x900.png" alt="Metro Tags Banner">
     <div class="hero-overlay">
-      <img class="hero-logo" src="project%20vader%20logo.png" alt="Project Vader Logo">
-      <h1>Project Vader</h1>
-      <p>A multiplayer VR experience on Meta Quest — by Twizip Games</p>
+      <h1>Metro Tags</h1>
+      <p>The ultimate multiplayer VR tag game for Meta Quest</p>
     </div>
   </div>
 
   <!-- ABOUT SECTION -->
   <div class="container">
     <section>
-      <h2>About the Game</h2>
+      <h2>About Metro Tags</h2>
       <p>
-        Project Vader is a multiplayer VR game built for the Meta Quest platform.
-        Team up with friends, communicate with real-time voice chat, and explore
-        immersive worlds together.
+        Metro Tags is a fast-paced multiplayer VR tag game for Meta Quest. Run, hide, and chase your friends in immersive virtual environments. Designed for all ages, Metro Tags brings classic playground fun to the world of virtual reality.
       </p>
     </section>
 
@@ -209,57 +212,30 @@
     <section>
       <h2>Screenshots</h2>
       <div class="gallery">
-        <img src="forest_scene_1_2560x1440.png" alt="Forest Scene 1">
-        <img src="forest_scene_2560x1440.png" alt="Forest Scene">
-        <img src="forest_scene_2_2560x1440.png" alt="Forest Scene 2">
+        <img src="Hero_Cover.png" alt="Metro Tags Hero Cover">
+        <img src="Landscape.png" alt="Metro Tags Landscape">
+        <img src="Portrait.png" alt="Metro Tags Portrait">
+        <img src="Square.png" alt="Metro Tags Square">
       </div>
     </section>
 
-    <!-- FEATURE CARDS -->
-    <section>
-      <h2>Features</h2>
-      <div class="features">
-        <div class="card">
-          <img src="forest_scene_3_2560x1440.png" alt="Multiplayer">
-          <div class="card-body">
-            <h3>Multiplayer</h3>
-            <p>Jump into real-time multiplayer sessions powered by Photon networking.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="resized_2560x1440.png" alt="Voice Chat">
-          <div class="card-body">
-            <h3>Voice Chat</h3>
-            <p>Communicate with your team using built-in Photon Voice — real-time,
-              never recorded.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="forest_scene_1_2560x1440.png" alt="Immersive Worlds">
-          <div class="card-body">
-            <h3>Immersive Worlds</h3>
-            <p>Explore detailed environments designed from the ground up for VR.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Features section removed -->
 
     <!-- CONTACT -->
     <section>
       <h2>Contact Us</h2>
       <p>
         Have questions, feedback, or need support? Reach out at
-        <a href="mailto:projectvaderhelp@yahoo.com" style="color:#bb86fc;">projectvaderhelp@yahoo.com</a>
+        <a href="mailto:darkrexus56@gmail.com" style="color:#bb86fc;">darkrexus56@gmail.com</a>
       </p>
     </section>
   </div>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2026 Twizip Games. All rights reserved.</p>
+    <p>&copy; 2026 Metro Tags. All rights reserved.</p>
     <p>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html" style="font-size:1.5rem; font-weight:700; color:#bb86fc;">Privacy Policy</a>
     </p>
   </footer>
 
